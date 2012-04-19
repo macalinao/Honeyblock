@@ -19,21 +19,14 @@ package org.honeycraft.honeyblock;
 import java.util.logging.Logger;
 
 /**
- * Honeyblock main class
+ * Represents a Honeyblock interface.
  */
-public class Honeyblock {
+public interface HoneyblockInterface {
     /**
-     * The Honeyblock logger.
-     */
-    private Logger logger;
-
-    /**
-     * Creates a new instance of Honeyblock.
+     * Gets the {@link Logger} associated with Honeyblock.
      *
-     * @param hb The honeyblock interface to use.
+     * @return The logger.
      */
-    public Honeyblock(HoneyblockInterface hb) {
-        this.logger = hb.getLogger();
-    }
+    public Logger getLogger();
 
 }

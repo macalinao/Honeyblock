@@ -14,26 +14,27 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with Honeyblock.  If not, see <http://www.gnu.org/licenses/>.
  */
-package org.honeycraft.honeyblock;
+package org.honeycraft.honeyblock.bukkit;
 
-import java.util.logging.Logger;
+import org.honeycraft.honeyblock.*;
+import java.util.logging.Level;
+import org.bukkit.plugin.java.JavaPlugin;
 
 /**
  * Honeyblock main class
  */
-public class Honeyblock {
-    /**
-     * The Honeyblock logger.
-     */
-    private Logger logger;
+public class HoneyblockBukkit extends JavaPlugin implements HoneyblockInterface {
+    private Honeyblock honeyblock;
 
-    /**
-     * Creates a new instance of Honeyblock.
-     *
-     * @param hb The honeyblock interface to use.
-     */
-    public Honeyblock(HoneyblockInterface hb) {
-        this.logger = hb.getLogger();
+    @Override
+    public void onDisable() {
+        getLogger().log(Level.INFO, "Plugin disabled.");
+    }
+
+    @Override
+    public void onEnable() {
+        honeyblock = new Honeyblock(this);
+        getLogger().log(Level.INFO, "Plugin enabled.");
     }
 
 }

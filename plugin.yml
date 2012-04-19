@@ -1,0 +1,14 @@
+---
+name: ${project.name}
+description: ${project.description}
+version: ${project.version}
+author: AlbireoX
+website: ${project.url}
+
+main: org.honeycraft.honeyblock.bukkit.HoneyblockBukkit
+
+commands:
+  honeyblock:
+    description: Honeyblock base command.
+    usage: /honeyblock <tool> [args]
+    aliases: ["hb"]

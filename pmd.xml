@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.2.5" timestamp="2012-04-18T21:35:05.655">
+<file name="C:\Users\simplyianm\Desktop\p\a\Honeyblock\src\main\java\org\honeycraft\honeyblock\Honeyblock.java">
+<violation beginline="28" endline="28" begincolumn="20" endcolumn="25" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.honeycraft.honeyblock" class="Honeyblock" variable="logger" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'logger'.
+</violation>
+</file>
+<file name="C:\Users\simplyianm\Desktop\p\a\Honeyblock\src\main\java\org\honeycraft\honeyblock\bukkit\HoneyblockBukkit.java">
+<violation beginline="27" endline="27" begincolumn="24" endcolumn="33" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="org.honeycraft.honeyblock.bukkit" class="HoneyblockBukkit" variable="honeyblock" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'honeyblock'.
+</violation>
+</file>
+</pmd>

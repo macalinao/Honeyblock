@@ -11,7 +11,7 @@
     <!-- Description -->
     <name>Honeyblock</name>
     <url>http://honeycraft.org</url>
-    <description>${project.name} is a plugin for Spout which attempts to bring modding to the masses. It executes Javascript retrieved from a package manager.</description>
+    <description>${project.name} is a plugin for Bukkit which provides survival islands.</description>
 
     <!-- Properties -->
     <properties>
